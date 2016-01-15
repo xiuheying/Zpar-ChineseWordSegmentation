@@ -13,6 +13,6 @@ After compiling,a directory `zpar/dist/segmentor` will be created,in which there
       `zpar/dist/segmentor/segmentor <model> [<input-file>] [<output-file>]`<br>
 (5)Suppose a maunally specified segmentation of the input file has been given in a reference file,you can evaluate the quality of the outputs by typing:<br>
 `python evaluate.py output.txt reference.txt` <br>
- You can get the precision,recall,and f-score here and the file evaluate.py is in the directory zpar/doc/doc/seg_files<br>
+ You can get the precision,recall,and f-score here and the file `evaluate.py` is in the directory `zpar/doc/doc/seg_files`<br>
 
    The performance of the system after one training iteration may not be optimal. You can choose the model that gives the highest f-score on your development test data by running `./test.sh` in the directory `zpar/doc/doc/seg_files`,which can automatically train the segmentor for 30 iterations, and after the ith iteration, stores the model file to model.i. You can compare the f-score of all 30 iterations and choose model.k, which gives the best f-score, as the final model.In this file, there is a variable called `segmentor`. You need to set this variable to the relative directory of `zpar/dist/segmentor`.
