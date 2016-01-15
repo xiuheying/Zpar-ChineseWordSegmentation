@@ -9,7 +9,7 @@ Please follow the below steps:<br>
 &#160; &#160; &#160; &#160;After compiling,a directory `zpar/dist/segmentor` will be created,in which there are two files:`train` and `segmentor`. The file `train` is used to train a segmentation model,and the file `segmentor` is used to segment new texts using a trained segmentation model.<br>
 (3) To train a model,type:<br>
 &#160; &#160; &#160; &#160;`zpar/dist/segmentor/train <train-file> <model-file> <number of iterations>`<br>
-(4)To apply an existing model to segment new texts,type:<br>
+(4) To apply an existing model to segment new texts,type:<br>
 &#160; &#160; &#160; &#160;`zpar/dist/segmentor/segmentor <model> <input-file> <output-file>`<br>
 (5) Suppose a maunally specified segmentation of the input file has been given in a reference file,you can evaluate the quality of the outputs by typing:<br>
 &#160; &#160; &#160; &#160;`python evaluate.py <output-file> <reference-file>` <br>
