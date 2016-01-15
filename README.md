@@ -1,8 +1,8 @@
 # Zpar-ChineseWordSegmentation
 
-This is an example script to implement chinese word segmentation by running the code of Zpar<br>
+This is an example script to implement chinese word segmentation by running the code of Zpar<br><br>
 Please follow the below steps:<br>
-(1)Download the Source code of [ZPar](https://github.com/frcchang/zpar/releases) to the directory zpar.<br>
+(1)Download the Source code of [ZPar](https://github.com/frcchang/zpar/releases) to the directory `zpar`.<br>
 (2)Compile:<br>
       `make zpar.zh` for the Chinese zpar<br>
       `make segmentor` for the word segmentation system.<br>
