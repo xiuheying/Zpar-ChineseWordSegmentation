@@ -1,6 +1,6 @@
 # Zpar-ChineseWordSegmentation
 
-This is an example script to implement chinese word segmentation by running the code of **Zpar**<br><br>
+This is an example script to implement chinese word segmentation by running the code of **ZPar**<br><br>
 Please follow the below steps:<br>
 (1) Download the Source code of [ZPar](https://github.com/SUTDNLP/ZPar) to the directory `ZPar`.<br>
 (2) Run command `cmake .` generate Makefile<br>
@@ -8,10 +8,13 @@ Please follow the below steps:<br>
 &#160; &#160; &#160; &#160;After compiling,a directory `ZPar/dist/segmentor` will be created,in which there are two files:`train` and `segmentor`. The file `train` is used to train a segmentation model,and the file `segmentor` is used to segment new texts using a trained segmentation model.<br>
 (3) To train a model,type:<br>
 &#160; &#160; &#160; &#160;`ZPar/dist/segmentor/train <train-file> <model-file> <number of iterations>`<br>
+&#160; &#160; &#160; &#160;For example,ZPar/dist/segmentor/train pku.train model 1<br>
 (4) To apply an existing model to segment new texts,type:<br>
 &#160; &#160; &#160; &#160;`ZPar/dist/segmentor/segmentor <model> <input-file> <output-file>`<br>
+&#160; &#160; &#160; &#160;For example,ZPar/dist/segmentor/segmentor model pku.test pku.test.output<br>
 (5) Suppose a maunally specified segmentation of the input file has been given in a reference file,you can evaluate the quality of the outputs by typing:<br>
 &#160; &#160; &#160; &#160;`python ZPar/doc/doc/seg_files/evaluate.py <output-file> <reference-file>` <br>
+&#160; &#160; &#160; &#160;For example,python ZPar/doc/doc/seg_files/evaluate.py pku.test.output pku.test.reference <br>
 &#160; &#160; &#160; &#160;The file `evaluate.py` performs automatic evaluation .You can find the precision,recall,and f-score here<br>
 
 ---
