@@ -3,8 +3,8 @@
 This is an example script to implement chinese word segmentation by running the code of **ZPar**<br><br>
 Please follow the below steps:<br>
 (1) Download the Source code of [ZPar](https://github.com/SUTDNLP/ZPar) to the directory `ZPar`.<br>
-(2) Run command `cmake .` in the directory `CMake` to generate Makefile<br>
-(3) Compile using `make segmentor` in the directory `Make` <br>
+(2) Run command `cmake .` in the directory `ZPar/CMake` to generate Makefile<br>
+(3) Compile using `make segmentor` in the directory `ZPar/Make` <br>
 &#160; &#160; &#160; &#160;After compiling,a directory `ZPar/dist/segmentor` will be created,in which there are two files:`train` and `segmentor`. The file `train` is used to train a segmentation model,and the file `segmentor` is used to segment new texts using a trained segmentation model.<br>
 (4) To train a model,type:<br>
 &#160; &#160; &#160; &#160;`ZPar/dist/segmentor/train <train-file> <model-file> <number of iterations>`<br>
